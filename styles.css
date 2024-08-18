@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+div {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(204, 194, 194, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform: translateY(10px);
+  position: absolute;
+  top: 59%;
+  left: 0%;
+  scale: 75%;
+  transition: transform 1s ease;
+}
+
+div h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 48px;
+}
+
+div p1 {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 24px;
+}
+
+span {
+  position: relative;
+  font-size: 24px;
+  bottom: -1.45em;
+  left: 1em;
+  gap: 15px; /* Space between child elements */
+}
+
+#roblox {
+  width: 8%;
+  position: relative;
+  bottom: .5em;
+  right: 1em;
+}
+
+#github {
+  width: 6%;
+  position: relative;
+  bottom: .75em;
+  right: 1em;
+}
+
+a {
+  margin-right: 15px; /* Adds space between anchor tags */
+  text-decoration: none; /* Optional: Remove underline */
+  color: blue; /* Optional: Change text color */
+}
+
+a:last-child {
+  margin-right: 0; /* Remove margin from the last anchor tag */
+}
+
+.l:hover {
+  text-decoration: none; /* Underlines the hovered link */
+  transform: rotate(45deg) scale(1.2);
+  transition: transform 0.5s ease;
+
+}
+
+.l:not(:hover) {
+  text-decoration: none; /* Underlines the hovered link */
+  transform: rotate(0deg) scale(1);
+  transition: transform 0.5s ease;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scrollbars */
+  height: 100%; /* Full viewport height */
+}
